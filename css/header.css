@@ -18,12 +18,15 @@ header {
   text-decoration: none;
   font-size: 1.125rem;
   display: block;
-  transition: 0.5s;
-
+  transition: 0.3s;
+  border: 2px solid transparent;
+  position: relative;
 }
 
 .header-menu a:hover{
-  color: #70DA1C ;
+  color: #004AAD;
+  border: 2px solid #004AAD;
+  border-radius: 4px;
 } 
 
 @media (max-width:800px) {

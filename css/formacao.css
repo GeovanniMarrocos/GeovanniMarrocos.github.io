@@ -14,14 +14,17 @@
 }
 
 .formacao-container::after {
-  content: "";
+  content: " ";
   display: block;
+  width: 100px;
+  height: 100px;
+  background: url("../img/detalhe.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
   position: absolute;
-  width:130px; 
-  height:100px;
-  background: url("../img/detalhe.svg") no-repeat center center;
   bottom: -50px;
-  left: -210px;
+  left: -24px;
 
 }
 
@@ -81,7 +84,7 @@
   display: block;
   width: 8px;
   height: 20px;
-  background: linear-gradient(#70DA1C, #CCF235);
+  background: linear-gradient(#004AAD, #525252);
   position: absolute;
   left: -25px;
   border-radius: 2px;
@@ -108,11 +111,11 @@
   content: "";
   position: absolute;
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 35px;
+  height: 30px;
   background: url("../img/cursos.svg") no-repeat center center;
-  left: -35px;
-  top: -2px;
+  left: -45px;
+  top: -6px;
 }
 
 .cursos h3::before {
@@ -137,6 +140,13 @@
   justify-content: space-between;
 }
 
+
+@media (max-width:1300px) {
+  .formacao-container::after{
+    left: 30px;
+  }
+}
+
 @media (max-width:800px) {
   .formacao-container {
     grid-template-columns: 1fr;
@@ -154,11 +164,11 @@
   content: "";
   position: absolute;
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
   background: url("../img/cursos.svg") no-repeat center center;
   left: 220px;
-  top: -2px;
+  top: -10px;
   }
 
 .cursos h3::before {
@@ -168,6 +178,9 @@
 .idiomas h3::before {
   background: url("../img/idiomas.svg") no-repeat center center;
   left: 70px;
+  }
+   .formacao-container::after{
+    display: none;
   }
 
 }
